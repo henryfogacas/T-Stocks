@@ -31,7 +31,7 @@ export default function Routes() {
                 component={Home}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <Icon focused={focused} image={require('../../assets/tab-bar-icon/home-icon.png')} />
+                        <Icon focused={focused} iconName="home" />
                     ),
                 }}
             />
@@ -40,7 +40,7 @@ export default function Routes() {
                 component={Stocks}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <Icon focused={focused} image={require('../../assets/tab-bar-icon/stocks-icon.png')} />
+                        <Icon focused={focused} iconName="trending-up" />
                     ),
                 }}
             />
@@ -49,7 +49,7 @@ export default function Routes() {
                 component={Wallet}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <Icon focused={focused} image={require('../../assets/tab-bar-icon/wallet-icon.png')} />
+                        <Icon focused={focused} iconName="dollar-sign" />
                     ),
                 }}
             />
@@ -58,7 +58,7 @@ export default function Routes() {
                 component={Settings}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <Icon focused={focused} image={require('../../assets/tab-bar-icon/settings-icon.png')} />
+                        <Icon focused={focused} iconName="settings" />
                     ),
                 }}
             />

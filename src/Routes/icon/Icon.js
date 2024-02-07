@@ -1,22 +1,8 @@
 import React from "react";
-import { StyleSheet, Image } from "react-native";
+import { Feather } from 'react-native-vector-icons'
 
-const Icon = ({ focused, image }) => {
-    const iconStyle = focused ? styles.iconFocused : styles.icon;
-    return <Image style={iconStyle} source={image} />;
+export default function Icon({ focused, iconName }) {
+    const opacity = focused ? 1 : 0.5;
+    const size = focused ? 30 : 25;
+    return <Feather name={iconName} opacity={opacity} size={size} />;
 };
-
-const styles = StyleSheet.create({
-    icon: {
-        width: 25,
-        height: 25,
-        opacity: 0.5,
-    },
-    iconFocused: {
-        width: 30,
-        height: 30,
-        opacity: 1,
-    }
-})
-
-export default Icon;
